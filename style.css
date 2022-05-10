@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+/* 1 */
+.breathing-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    border: 1px solid red;
+}
+.breathing-box:hover {
+    background-color: red;
+    transition: 3s;
+}
+
+/* 2 */
+.growing-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.growing-box:active {
+    transition: 3s;
+    width: 100%;
+}
+
+/* 3 */
+.changing-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.changing-box:hover {
+    transition: 3s;
+    border-radius: 100%;
+}
+
+/* 4 */
+.disappearing-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.disappearing-box:hover {
+    opacity: 0;
+    transition: 3s;
+}
+
+/* 5 */
+.sizing-box {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.sizing-box:hover {
+    width: 150px;
+    height: 150px;
+    transition: 2s;
+}
+
+.sizing-box:active {
+    width: 70px;
+    height: 70px;
+    transition: 2s;
+}
+
+/* 6 */
+.colorchange-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.colorchange-box:hover {
+    filter: grayscale(100%);
+    transition: 3s;
+}
+
+/* 7 - Gia' fatto al numero 6 */
+
+/* 8 */
+.magic-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.magic-box:hover {
+    filter: grayscale(50%);
+    transition: 3s;
+    border-radius: 15%;
+}
+
+/* 9 */
+.magicgrow-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+}
+
+.magicgrow-box:hover {
+    filter: grayscale(50%);
+    transition: 3s;
+    border-radius: 15%;
+    width: 220px;
+    height: 220px;
+}
+
+/* 10 */
+.loading {
+    display: block;
+    margin: 0 auto;
+    border: 16px solid lightgray;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* 11 */
+  .loading-crash {
+    display: block;
+    margin: 0 auto;
+    border: 16px solid lightgray;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    /* animation: spin 3s linear infinite; */
+    margin-top: 20px;
+  }
+
+  .loading-crash:hover {
+      animation: spin-crash 3s linear infinite;
+  }
+
+  @keyframes spin-crash  {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(310deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* 12 */
